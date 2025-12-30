@@ -1,33 +1,65 @@
+body{
+    hr{
+        border: 0;
+        height: 0.2px;
+        background: #4eb30631;
+    }
+    background: linear-gradient(
+        rgb(9, 9, 0),rgb(9, 9, 0),  rgb(40, 59, 34), rgb(9, 9, 0));
+}
 .logoTitulo{
+    h1{
+        color: #e9e2e2e7;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 h1{
     font-size: 1.5em;
     text-align: center;
 }
 .menuNavegacao{
-    text-align: center;
-    font-size: 0.6em;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 0.8em;
     flex-wrap: wrap;
+    text-align: center;
+    transform: translateY(-0.3em);
+    a{
+        
+        text-decoration: none;
+        font-family: 'Audiowide', cursive;
+        color: #f0f0f0;
+    }
+}
+.apresentacao{
+    color: #f0f0f0;
 }
 .produetosemdestaque{
+    h3{
+        color: #f0f0f0;
+    }
+    background: linear-gradient(
+        rgb(9, 9, 0), rgb(40, 59, 34),rgb(9, 9, 0)
+    );
     text-align: center;
-    margin-top: 20px;
+    margin-top: -10px;
     flex-wrap: wrap;
 }
 .btProdDestaque:hover{
     background-color: #f0f0f0;
     /* transform: translateY(-0.3em); */
-    transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.07, 1.07, 1.07);
     transition: transform 0.5s, background-color 0.2s;
 }
 .informacoesContato{
     color: #656161;
     background: linear-gradient(
-        rgb(9, 9, 0), #000000
+        rgb(9, 9, 0), rgb(9, 9, 0)
     );
     
     text-align: center;
