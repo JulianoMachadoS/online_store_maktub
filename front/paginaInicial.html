@@ -12,25 +12,24 @@
     
 
     <!-- Cabeçalho -->
-    <header>
+    <header id = "cabecalho">
         <!-- Logo e título -->
         <div class="logoTitulo">
             <a href="paginaInicial.html"><img src="/img/logos/logoEstilizada.png" alt="Logo da Mak" width="100"></a>
             <h1>Mak o estilo que te move</h1>
         </div>
         
-
+        <!-- Menu de navegação -->
         <div class="menuNavegacao">
             
-            <!-- Menu de navegação -->
-            <a href="#">Lançamentos</a> 
-            <a href="#">Promoções</a> 
-            <a href="#">Calçados</a>
-            <a href="#">Camisetas</a>
-            <a href="#">Camisas</a>
+            <a id="lancamentos" href="#">Lançamentos</a> 
+            <a id="promocoes" href="#">Promoções</a> 
+            <a id="calcados" href="#">Calçados</a>
+            <a id="camisetas" href="#">Camisetas</a>
+            <a id="camisas" href="#">Camisas</a>
             
         </div>
-        </header>
+    </header>
         
     <main>
         <!-- Conteúdo principal -->
@@ -50,18 +49,31 @@
                 
                 <button class="btProdDestaque">
                     <img src="/img/calcaBaggy.jpg" alt="Produto 1" width="200">
-                <p>Calça</p></button> 
+                <p id = "descricaoProduto">Calça</p></button> 
                 
                 <button class="btProdDestaque">
                     <img src="/img/calcaMarom.jpg" alt="Produto 2" width="200">
-                    <p>Calça</p></button>
+                    <p id = "descricaoProduto">Calça</p></button>
 
                 <button class="btProdDestaque">
                     <img src="/img/calcaBocadecinoF.jpg" alt="Produto 3" width="200">
-                    <P>Calça</P></button>
+                    <p id = "descricaoProduto">Calça</p></button>
             </section>
         </div>
         
+        <!-- Formulário de contato -->
+        <div class="contato">
+            <form>
+                <h3>fale conosco</h3>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+                <br>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                <br>
+                <button id ="enviarMSG" type="submit"><strong>Enviar</strong></button>
+            </form>
+            
+        </div>
     
     
     </main>
