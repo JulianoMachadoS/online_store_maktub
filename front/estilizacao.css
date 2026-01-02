@@ -69,7 +69,7 @@ body{
 .btProdDestaque{
     p{
         text-align: center;
-        opacity: 0.1;
+        opacity: 100%;
     }
     
     margin-inline: 1.5em;
@@ -93,6 +93,14 @@ body{
         object-fit: cover;
         border-radius: 1.1em;
         filter: brightness(1.12);
+    }
+}
+.btProdDestaque:active{
+    transform: scale3d(0.95, 0.95, 0.95);
+    transition: transform 0.1s;
+    img{
+        object-fit: cover;
+        border-radius: 1.1em;
     }
 }
 .quemsomos{
@@ -161,6 +169,11 @@ body{
     color: #3e3c3c;
     font-size: 1em;
     cursor: pointer;
+}
+#enviarMSG:active{
+    background-color: #c3ff00;
+    object-fit:initial;
+    filter: brightness(1.12);
 }
 .informacoesContato{
     border-top: #f0f0f0 0.2px solid;
